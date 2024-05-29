@@ -1,8 +1,8 @@
 type StackMap<Element> = Map<number, Element>
 
-class Stack<Element> {
-  private readonly elements: StackMap<Element>
-  private topIndex: number
+export class Stack<Element> {
+  protected readonly elements: StackMap<Element>
+  protected topIndex: number
 
   constructor() {
     this.elements = new Map()
